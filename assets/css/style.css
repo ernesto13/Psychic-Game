@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: 'Creepster', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+#psychic {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.container {
+    margin: 200px auto;
+    position: relative;
+    width: 45%;
+    height: 450px;
+    /*background:#444444;*/
+    border: 3px solid #7a7575;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 22px #000000;
+    -moz-box-shadow: 0px 0px 22px #000000;
+    box-shadow: 0px 0px 22px #000000;
+    background: #525252;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #3d72b4, #525252);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3d72b4, #525252);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: auto;
+    opacity: .93;
+}
+
+div {
+    margin: 20px;
+    color: #fff;
+    font-size: 25px;
+    text-shadow: -2px -2px 0px #000000;
+    letter-spacing: 2px;
+}
