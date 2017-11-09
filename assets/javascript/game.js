@@ -40,17 +40,3 @@ document.onkeyup = function(event) {
         userGuess.length = 0;
     }
 };
-
-
-
-
-
-
-
-
-
-// Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
-
-
-
-// When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).
