@@ -7,7 +7,7 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 // Guess what letter I'm thinking of
 
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-console.log("Psychic Guesses: " + computerGuess);
+console.log("Psychic thinks of this letter: " + computerGuess);
 
 document.onkeyup = function(event) {
     //when player enters a key, displays to the screen
@@ -20,12 +20,10 @@ document.onkeyup = function(event) {
         // When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
         // computerGuess;
         wins++;
-        reset();
-
         document.getElementById("wins").innerHTML = "Wins: " + wins;
         document.getElementById("guessesLeft").innerHTML = "You Win!!!, Play again!!!";
         console.log("you won!");
-
+        reset();
 
     }
 
@@ -36,7 +34,6 @@ document.onkeyup = function(event) {
         document.getElementById("guessesLeft").innerHTML = "Guesses left: " + guessesLeft;
     }
 
-
     // Losses: (# of times the user has failed to guess the
     // letter correctly after exhausting all guesses)
     //if no guesses right, losses goes up by 1 on the screen
@@ -45,6 +42,7 @@ document.onkeyup = function(event) {
         losses++;
         document.getElementById("losses").innerHTML = "Losses: " + losses;
         document.getElementById("guessesLeft").innerHTML = "You Lost!, Try again";
+        console.log("You lost!!");
         reset();
 
     }
@@ -54,8 +52,7 @@ document.onkeyup = function(event) {
         guessesLeft = 10;
         userGuess.length = 0;
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-        console.log("Psychic Guesses again: " + computerGuess);
+        console.log("Psychic thinks of another letter: " + computerGuess);
     }
-
 
 };
